@@ -22,6 +22,12 @@ module "network_securitygroup" {
   nsg        = var.nsg
 }
 
+module "route_table" {
+  depends_on = [module.network_securitygroup]
+  source = "../../module/route_table"
+  route_table = var.route_table
+}
+
 # module "virtual_machine" {
 #   depends_on      = [module.subnet]
 #   source          = "../../module/virtual_machine"

@@ -31,6 +31,15 @@ nsg = {
   }
 }
 
+route_table = {
+  routetable1 = {
+   name ="route_table_hub_dev"
+   location ="centralindia"
+  resource_group_name = "rg-hub-dev"
+    
+  }
+}
+
 # virtual_machine = {
 #   frontend_vm = {
 #     nicname                       = "network_interface1"
