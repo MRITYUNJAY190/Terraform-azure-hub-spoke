@@ -16,6 +16,12 @@ module "subnet" {
   subnet     = var.subnet
 }
 
+module "network_securitygroup" {
+  depends_on = [module.subnet]
+  source     = "../../module/network_securitygroup"
+  nsg        = var.nsg
+}
+
 # module "virtual_machine" {
 #   depends_on      = [module.subnet]
 #   source          = "../../module/virtual_machine"

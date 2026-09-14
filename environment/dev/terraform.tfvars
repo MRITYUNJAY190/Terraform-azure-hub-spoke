@@ -1,7 +1,7 @@
 resource_groups = {
   rg1 = {
     name     = "rg-hub-dev"
-    location = "australiacentral"
+    location = "centralindia"
   }
 }
 
@@ -9,7 +9,7 @@ virtual_network = {
   vnet1 = {
     name                = "vnet-hub-dev"
     resource_group_name = "rg-hub-dev"
-    location            = "australiacentral"
+    location            = "centralindia"
     address_space       = ["10.0.0.0/16"]
   }
 }
@@ -23,10 +23,18 @@ subnet = {
   }
 }
 
+nsg = {
+  nsg1 = {
+    name                = "nsg-hub-dev"
+    location            = "centralindia"
+    resource_group_name = "rg-hub-dev"
+  }
+}
+
 # virtual_machine = {
 #   frontend_vm = {
 #     nicname                       = "network_interface1"
-#     location                      = "australiacentral"
+#     location                      = "centralindia"
 #     resource_group_name           = "rg-hub-dev"
 #     ipname                        = "frontend_ip"
 #     private_ip_address_allocation = "Dynamic"

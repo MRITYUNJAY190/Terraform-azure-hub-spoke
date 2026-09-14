@@ -26,6 +26,14 @@ variable "subnet" {
 
 }
 
+variable "nsg" {
+  type = map(object({
+    name                = string
+    location            = string
+    resource_group_name = string
+  }))
+}
+
 # variable "virtual_machine" {
 #   type = map(object({
 #     nicname                       = string
