@@ -66,6 +66,7 @@ route_table = {
 
 }
 
+
 virtual_machine = {
 
   vm01 = {
