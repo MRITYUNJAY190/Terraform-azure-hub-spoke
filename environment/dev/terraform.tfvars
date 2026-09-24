@@ -56,7 +56,6 @@ nsg = {
 
 }
 
-
 route_table = {
 
   routetable1 = {
@@ -66,7 +65,6 @@ route_table = {
   }
 
 }
-
 
 virtual_machine = {
 
